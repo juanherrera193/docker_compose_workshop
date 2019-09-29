@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    hibernate.ddl-auto: update
+  datasource:
+    url: ${MYSQL_URL:jdbc:mysql://localhost:3306/motorcycle_db}
+    username: ${MYSQL_USERNAME:workshop_user}
+    password: ${MYSQL_PASSWORD:Workshop_1234}
+
+flyway:
+  user: ${spring.datasource.username}
+  password: ${spring.datasource.password}
+  url: ${spring.datasource.url}
