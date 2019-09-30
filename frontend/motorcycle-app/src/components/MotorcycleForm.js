@@ -36,33 +36,33 @@ class MotorcycleForm extends Component {
                     <Form.Row>
                         <Form.Group as={Col} controlId="formGridBrand">
                             <Form.Label>Brand</Form.Label>
-                            <Field className="form-control" name="brand" component="input" type="text" placeholder="Enter motorcycle brand" />
+                            <Field required className="form-control" name="brand" component="input" type="text" placeholder="Enter motorcycle brand" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridReference">
                             <Form.Label>Reference</Form.Label>
-                            <Field className="form-control" name="reference" component="input" type="text" placeholder="Enter motorcycle reference" />
+                            <Field required className="form-control" name="reference" component="input" type="text" placeholder="Enter motorcycle reference" />
                         </Form.Group>
                     </Form.Row>
 
                     <Form.Group controlId="formGridSubcategory">
                         <Form.Label>Subcategory</Form.Label>
-                        <Field className="form-control" name="subcategory" component="input" type="text" placeholder="Enter motorcycle subcategory" />
+                        <Field required className="form-control" name="subcategory" component="input" type="text" placeholder="Enter motorcycle subcategory" />
                     </Form.Group>
 
                     <Form.Group controlId="formGridMileage">
                         <Form.Label>Mileage</Form.Label>
-                        <Field className="form-control" name="mileage" component="input" type="number" placeholder="Enter mileage in kilometers" />
+                        <Field required className="form-control" name="mileage" component="input" type="number" placeholder="Enter mileage in kilometers" />
                     </Form.Group>
 
                     <Form.Group controlId="formGridPhotoUrl">
                         <Form.Label>Photo url</Form.Label>
-                        <Field className="form-control" name="photoUrl" component="input" type="text" placeholder="Enter motorcycle photo url" />
+                        <Field required className="form-control" name="photoUrl" component="input" type="text" placeholder="Enter motorcycle photo url" />
                     </Form.Group>
 
                     <Form.Group controlId="formGridDescription">
                         <Form.Label>Description</Form.Label>
-                        <Field className="form-control" name="description" component="textarea" rows="3" />
+                        <Field required className="form-control" name="description" component="textarea" rows="3" />
                     </Form.Group>
 
                     <Button variant="primary" type="submit" disabled={submitting}>

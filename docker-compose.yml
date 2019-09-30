@@ -5,6 +5,7 @@ services:
     image: pabliny5/nginx:1.0
     ports:
       - 80:80
+      - 443:443
     depends_on:
       - motorcycle-app
       - motorcycle-api

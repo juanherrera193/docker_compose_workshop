@@ -1,8 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import CustomNavbar from './components/CustomNavbar';
 import Home from './components/Home';
 import MotorcycleList from './components/MotorcycleList';
@@ -13,6 +12,7 @@ function App() {
     <Router>
       <div>
         <CustomNavbar />
+        <br/>
         <Route exact path="/" component={Home} />
         <Route path="/motorcycles" component={MotorcycleList} />
         <Route path="/motorcycle" component={MotorcycleForm} />
